@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="styles.css">
     <style>
         body { 
-           background-color: SpringGreen;
+           background-color: darkseagreen;
         }
         </style>
         </head>
@@ -29,26 +29,40 @@
         <li>Email</li>
     </ul> 
     <h3>Contact Us Forms</h3>
-
-    <form action="/travelSafe_folks.htps"> 
+ 
      <form
      action="https://us-central1-steam-center-app-dev.cloudfunctions.net/formToEmail"
  method="post" 
- >
+ >      
+ <p>Do you think the New York Transportation can be better?:</p>
+
+ <input type="checkbox" id="option1" name="Option1" value="Good">
+  <label for="option1"> Yes it should get better</label><br>
+  <input type="checkbox" id="option2" name="Option2" value="Mid">
+  <label for="option2">It alright the changes are good as is </label><br>
+  <input type="checkbox" id="option3" name="Option3" value="Bad">
+  <label for="option3">No please don't make any changes</label><br><br>
+  
+ <p>Choose what transport system you use to get to work?:</p>
+
+   <input type="radio" id="subway" name="fav_system" value="Subway">
+   <label for="Subway">Subway</label><br>
+   <input type="radio" id="bus" name="fav_system" value="Bus">
+   <label for="Bus">Bus</label><br>
+   <input type="radio" id="Taxi" name="fav_system" value="Taxi">
+   <label for="Taxi">Taxi</label><br><br>
+
         <input name="send-to" value="zsimons@brooklynsteamcenter.org" hidden>
-        <label for="text">Email:</label><br>
-        <input type="text" id="@email" name="@email" value=""><br>
-        <label for="text">Social Media</label><br>
-        <input type="text" id="Social Media" name="Social Media" valiue=""><br>
         <label for="fname">First name:</label><br>
         <input type="text" id="fname" name="fname" value=""><br>
         <label for="lname">Last name:</label><br>
-        <input type="text" id="lname" name="lname" value=""><br><br>
+        <input type="text" id="lname" name="lname" value=""><br>
+        <label for="text">Email:</label><br>
+        <input type="text" id="@email" name="@email" value=""><br>
+        <label for="text">Social Media</label><br>
+        <input type="text" id="Social Media" name="Social Media" valiue=""><br><br>
         <input type="submit" value="Submit">
       </form> 
       
-      <p>If you click the "Submit" button, the form-data will be sent to a page called "/travelSafe_folks.htps"".</p>
-    <h4></h4>
-
 </body>
 </html>
